@@ -111,18 +111,29 @@ If you get:
 
 Fix:
 #### Install OpenMP runtime
+
+```bash
 brew install libomp
+```
 
 #### Add library path (for Apple Silicon)
+
+```bash
 echo 'export DYLD_LIBRARY_PATH="/opt/homebrew/opt/libomp/lib:$DYLD_LIBRARY_PATH"' >> ~/.zshrc
 source ~/.zshrc
+```
 
 #### Reinstall XGBoost
+
+```bash
 pip install --force-reinstall xgboost
+```
 Or rely on the optional XGBoost import — the app will still work without it.
 Excel Import Error
 If .xlsx reading fails:
+```bash
 pip install openpyxl
+```
 
 ---
 
