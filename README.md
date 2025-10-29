@@ -73,7 +73,7 @@ streamlit run app.py
 6. Adjust Cross-validation folds and iterations
 7. Click 🚀 Train & Compare.
 8. Review:
-- Summary table (Accuracy, Precision/Recall/F1)
-- Confusion Matrix and ROC curves per model
-- Classification Report
-- Best parameters if tuning is enabled
+    - Summary table (Accuracy, Precision/Recall/F1)
+    - Confusion Matrix and ROC curves per model
+    - Classification Report
+    - Best parameters if tuning is enabled
