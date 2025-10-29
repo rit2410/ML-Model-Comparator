@@ -30,7 +30,7 @@ Upload a dataset, pick one or more ML models, optionally **fine-tune** them with
 
 ## 📁 Project Structure
 
-```mermaid
+```text
 ml-model-comparator/
 ├── app.py
 ├── src/
