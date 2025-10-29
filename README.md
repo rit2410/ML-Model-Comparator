@@ -110,14 +110,14 @@ If you get:
 - XGBoostError: Library (libxgboost.dylib) could not be loaded.
 
 Fix:
-# Install OpenMP runtime
+#### Install OpenMP runtime
 brew install libomp
 
-# Add library path (for Apple Silicon)
+#### Add library path (for Apple Silicon)
 echo 'export DYLD_LIBRARY_PATH="/opt/homebrew/opt/libomp/lib:$DYLD_LIBRARY_PATH"' >> ~/.zshrc
 source ~/.zshrc
 
-# Reinstall XGBoost
+#### Reinstall XGBoost
 pip install --force-reinstall xgboost
 Or rely on the optional XGBoost import — the app will still work without it.
 Excel Import Error
@@ -126,7 +126,7 @@ pip install openpyxl
 
 ---
 
-🗺️ Roadmap
+### 🗺️ Roadmap
  SHAP explainability for tree/linear models
  Export trained models (joblib) and results (CSV)
  Add more models (LightGBM, Naive Bayes)
