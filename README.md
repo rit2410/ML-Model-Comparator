@@ -30,3 +30,36 @@ Upload a dataset, pick one or more ML models, optionally **fine-tune** them with
 
 ## 📁 Project Structure
 
+ml-model-comparator/
+├── app.py
+├── src/
+│ ├── preprocess.py # split, encode, scale, train/test split
+│ ├── train.py # models, tuning helpers, training loop
+│ ├── evaluate.py # metrics, plots, result table
+│ └── utils.py # theme and helpers
+├── data/
+│ └── sample_dataset.csv (optional)
+├── requirements.txt
+└── README.md
+
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Prerequisites
+
+- Python **3.10+** (tested on 3.11)
+- For macOS users who want to use **XGBoost**, install Homebrew first:
+  ```bash
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+### 2️⃣ Install dependencies
+
+- python -m venv venv
+- source venv/bin/activate       # Windows: venv\Scripts\activate
+- pip install -r requirements.txt
+  
+### 3️⃣ Run the app
+streamlit run app.py
+
