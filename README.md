@@ -63,3 +63,17 @@ ml-model-comparator/
 ### 3️⃣ Run the app
 streamlit run app.py
 
+### 🧪 Using the App
+
+1. Upload a CSV/XLSX or select a built-in dataset.
+2. Choose the target column, set test split, and random state.
+3. Pick one or more models.
+4. (Optional) Enable Hyperparameter Tuning:
+5. Choose None, Grid Search, or Random Search
+6. Adjust Cross-validation folds and iterations
+7. Click 🚀 Train & Compare.
+8. Review:
+- Summary table (Accuracy, Precision/Recall/F1)
+- Confusion Matrix and ROC curves per model
+- Classification Report
+- Best parameters if tuning is enabled
