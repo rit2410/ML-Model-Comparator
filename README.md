@@ -63,6 +63,8 @@ ml-model-comparator/
 ### 3️⃣ Run the app
 streamlit run app.py
 
+---
+
 ### 🧪 Using the App
 
 1. Upload a CSV/XLSX or select a built-in dataset.
@@ -77,3 +79,55 @@ streamlit run app.py
     - Confusion Matrix and ROC curves per model
     - Classification Report
     - Best parameters if tuning is enabled
+  
+---
+
+### 🤖 Supported Models & Tuning Grids
+| Model                | Tunable Parameters                               |
+| -------------------- | ------------------------------------------------ |
+| Logistic Regression  | `C`, `solver`                                    |
+| Random Forest        | `n_estimators`, `max_depth`, `min_samples_split` |
+| SVM (RBF)            | `C`, `gamma`                                     |
+| KNN                  | `n_neighbors`, `weights`                         |
+| XGBoost *(optional)* | `n_estimators`, `max_depth`, `learning_rate`     |
+
+Scoring during tuning uses f1_macro for balanced multi-class performance.
+
+---
+
+### ⚙️ Configuration Tips
+- Scaling: Toggle numeric scaling under Advanced Preprocessing.
+- Class imbalance: Enable Balance classes to use class_weight='balanced'.
+- Performance: For large datasets, lower CV folds or disable tuning.
+
+---
+
+### 🩹 Troubleshooting
+
+macOS + XGBoost: libomp.dylib not found
+
+If you get:
+- XGBoostError: Library (libxgboost.dylib) could not be loaded.
+
+Fix:
+# Install OpenMP runtime
+brew install libomp
+
+# Add library path (for Apple Silicon)
+echo 'export DYLD_LIBRARY_PATH="/opt/homebrew/opt/libomp/lib:$DYLD_LIBRARY_PATH"' >> ~/.zshrc
+source ~/.zshrc
+
+# Reinstall XGBoost
+pip install --force-reinstall xgboost
+Or rely on the optional XGBoost import — the app will still work without it.
+Excel Import Error
+If .xlsx reading fails:
+pip install openpyxl
+
+---
+
+🗺️ Roadmap
+ SHAP explainability for tree/linear models
+ Export trained models (joblib) and results (CSV)
+ Add more models (LightGBM, Naive Bayes)
+ Regression mode (MAE/RMSE, R²)
