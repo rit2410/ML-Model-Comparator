@@ -2,8 +2,6 @@
 
 Upload a dataset, pick one or more ML models, optionally **fine-tune** them with Grid/Random Search, and compare results with clear metrics and plots.
 
-![App Screenshot](docs/screenshot.png)
-
 ---
 
 ## ✨ Features
