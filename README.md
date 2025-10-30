@@ -48,20 +48,20 @@ ml-model-comparator/
 
 ##  Getting Started
 
-### 1️⃣ Prerequisites
+### 1. Prerequisites
 
 - Python **3.10+** (tested on 3.11)
 - For macOS users who want to use **XGBoost**, install Homebrew first:
   ```bash
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-### 2️⃣ Install dependencies
+### 2. Install dependencies
 
 - python -m venv venv
 - source venv/bin/activate       # Windows: venv\Scripts\activate
 - pip install -r requirements.txt
   
-### 3️⃣ Run the app
+### 3. Run the app
 streamlit run app.py
 
 ---
@@ -78,7 +78,7 @@ streamlit run app.py
 4. (Optional) Enable Hyperparameter Tuning:
 5. Choose None, Grid Search, or Random Search
 6. Adjust Cross-validation folds and iterations
-7. Click 🚀 Train & Compare.
+7. Click Train & Compare.
 8. Review:
     - Summary table (Accuracy, Precision/Recall/F1)
     - Confusion Matrix and ROC curves per model
