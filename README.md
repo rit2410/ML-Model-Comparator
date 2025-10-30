@@ -4,7 +4,7 @@ Upload a dataset, pick one or more ML models, optionally **fine-tune** them with
 
 ---
 
-## ✨ Features
+## Features
 
 - **Upload** CSV/XLSX or use built-in demo datasets (Breast Cancer, Wine)
 - **Automatic preprocessing**: imputation, one-hot encoding, optional scaling
@@ -17,7 +17,7 @@ Upload a dataset, pick one or more ML models, optionally **fine-tune** them with
 
 ---
 
-## 🧱 Tech Stack
+##  Tech Stack
 
 - **Python**
 - **Streamlit**
@@ -28,7 +28,7 @@ Upload a dataset, pick one or more ML models, optionally **fine-tune** them with
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```text
 ml-model-comparator/
@@ -46,7 +46,7 @@ ml-model-comparator/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1️⃣ Prerequisites
 
@@ -66,11 +66,11 @@ streamlit run app.py
 
 ---
 
-### Deployed Link 
+## Deployed Link 
 
+---
 
-
-### 🧪 Using the App
+##  Using the App
 
 1. Upload a CSV/XLSX or select a built-in dataset.
 2. Choose the target column, set test split, and random state.
@@ -87,7 +87,7 @@ streamlit run app.py
   
 ---
 
-### 🤖 Supported Models & Tuning Grids
+## Supported Models & Tuning Grids
 | Model                | Tunable Parameters                               |
 | -------------------- | ------------------------------------------------ |
 | Logistic Regression  | `C`, `solver`                                    |
@@ -100,14 +100,14 @@ Scoring during tuning uses f1_macro for balanced multi-class performance.
 
 ---
 
-### ⚙️ Configuration Tips
+##  Configuration Tips
 - Scaling: Toggle numeric scaling under Advanced Preprocessing.
 - Class imbalance: Enable Balance classes to use class_weight='balanced'.
 - Performance: For large datasets, lower CV folds or disable tuning.
 
 ---
 
-### 🩹 Troubleshooting
+## Troubleshooting
 
 macOS + XGBoost: libomp.dylib not found
 
@@ -142,7 +142,7 @@ pip install openpyxl
 
 ---
 
-### 🗺️ Roadmap
+## Roadmap
  - SHAP explainability for tree/linear models
  - Export trained models (joblib) and results (CSV)
  - Add more models (LightGBM, Naive Bayes)
