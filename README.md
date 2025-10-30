@@ -139,7 +139,7 @@ pip install openpyxl
 ---
 
 ### 🗺️ Roadmap
- SHAP explainability for tree/linear models
- Export trained models (joblib) and results (CSV)
- Add more models (LightGBM, Naive Bayes)
- Regression mode (MAE/RMSE, R²)
+ - SHAP explainability for tree/linear models
+ - Export trained models (joblib) and results (CSV)
+ - Add more models (LightGBM, Naive Bayes)
+ - Regression mode (MAE/RMSE, R²)
