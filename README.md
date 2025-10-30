@@ -66,6 +66,10 @@ streamlit run app.py
 
 ---
 
+### Deployed Link 
+
+
+
 ### 🧪 Using the App
 
 1. Upload a CSV/XLSX or select a built-in dataset.
