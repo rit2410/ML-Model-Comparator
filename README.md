@@ -109,32 +109,31 @@ Scoring during tuning uses f1_macro for balanced multi-class performance.
 
 ## Troubleshooting
 
-macOS + XGBoost: libomp.dylib not found
+### macOS + XGBoost: libomp.dylib not found
 
-If you get:
-- XGBoostError: Library (libxgboost.dylib) could not be loaded.
+If you get: XGBoostError: Library (libxgboost.dylib) could not be loaded.
 
 Fix:
-#### Install OpenMP runtime
+1. Install OpenMP runtime
 
 ```bash
 brew install libomp
 ```
 
-#### Add library path (for Apple Silicon)
+2. Add library path (for Apple Silicon)
 
 ```bash
 echo 'export DYLD_LIBRARY_PATH="/opt/homebrew/opt/libomp/lib:$DYLD_LIBRARY_PATH"' >> ~/.zshrc
 source ~/.zshrc
 ```
 
-#### Reinstall XGBoost
+3. Reinstall XGBoost
 
 ```bash
 pip install --force-reinstall xgboost
 ```
-Or rely on the optional XGBoost import — the app will still work without it.
-Excel Import Error
+4. Or rely on the optional XGBoost import — the app will still work without it. Excel Import Error
+
 If .xlsx reading fails:
 ```bash
 pip install openpyxl
