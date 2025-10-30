@@ -68,6 +68,8 @@ streamlit run app.py
 
 ## Deployed Link 
 
+https://ml-model-comparator.streamlit.app
+
 ---
 
 ##  Using the App
