@@ -18,7 +18,7 @@ warnings.filterwarnings("ignore")
 # ---------- Streamlit Page Config ----------
 st.set_page_config(
     page_title="ML Model Comparator",
-    page_icon="🧠",
+    page_icon="",
     layout="wide",
 )
 set_plot_theme()
